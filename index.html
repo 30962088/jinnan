@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=920,user-scalable=no"/>
+    <meta charset="utf-8">
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+
+</head>
+<body>
+<div class="loading" style="font-size: 30px;">
+    Loading....
+</div>
+<div id="page1" class="page1">
+
+    <img class="bg" src="css/imgs/1/bg.png"/>
+    <div class="center">
+        <div class="xiang">
+            <img class="xiang_1" src="css/imgs/1/xiang1.png"/>
+            <img class="xiang_2" src="css/imgs/1/xiang2.png"/>
+        </div>
+        <div class="ren1-wrap">
+            <div class="ren">
+                <img class="ren_1" src="css/imgs/1/ren1.png"/>
+                <img class="ren_2" src="css/imgs/1/ren2.png"/>
+            </div>
+
+            <img class="guang" src="css/imgs/1/guang.png"/>
+        </div>
+    </div>
+    <div class="front">
+        <img class="front1" src="css/imgs/1/front1.png"/>
+        <img class="front2" src="css/imgs/1/front2.png"/>
+    </div>
+
+    <div id="jn" class="jn">
+        <img class="jn1" src="css/imgs/1/jn.png"/>
+        <img class="point" src="css/imgs/1/point.png"/>
+    </div>
+    <div class="word-wrap">
+        <img class="word" src="css/imgs/1/word.png"/>
+    </div>
+
+
+</div>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script>
+    window.onload = function () {
+        $("body").addClass("loaded");
+        var $page1 = $("#page1");
+        var $jn = $("#jn");
+        $jn.bind("click", function () {
+            $page1.addClass("selected");
+        });
+    };
+
+
+
+</script>
+</body>
+</html>
